@@ -23,9 +23,20 @@ const Product = mongoose.model('Product',{
     }
 })
 
+// create a model for wishlist
+
+const wishlist = mongoose.model('Wishlist',{
+    id:Number,
+    title:String,
+    price:Number,
+    description:String,
+    image:String
+})
+
 
 // 4 export
 
 module.exports ={
-    Product
+    Product,
+    wishlist
 }
