@@ -83,7 +83,8 @@ deletewish=(id)=>{
                 return{
                     status:true,
                     statusCode:200,
-                    message:"Product deleted"
+                    products:result,
+                    message:"Product Removed"
 
                 }
             }
@@ -91,8 +92,7 @@ deletewish=(id)=>{
                 return{
                     status:false,
                     statusCode:404,
-                    message:"product not found"
-
+                    message:"Your wish-list is empty"
                 }
             }
         }
